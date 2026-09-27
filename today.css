@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(50% 50% at 50% 50%, #B8C0C7 26.64%, #5C6B7A 68.71%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+header {
+    width: 90%;
+    max-width: 1000px;
+    height: 62px;
+    margin-top: 20px;
+    padding: 0 25px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px); 
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 24px;
+    color: #FFD966;
+}
+
+/* Иконка бургера (меню) */
+.menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.menu-btn span {
+    width: 22px;
+    height: 3px;
+    background-color: #FFD966;
+    border-radius: 2px;
+}
+
+.menu-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s;
+    z-index: 998;
+    
+}
+
+.menu-overlay.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 1000px;
+    width: 300px;
+    max-width: 850px;
+
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: -5px 0 25px rgba(0, 0, 0, 0.2);
+    padding: 90px 20px 30px;
+    box-sizing: border-box;
+    transform: translateX(100%);
+    transition: transform 0.35s ease;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-nav.open {
+    transform: translateX(0);
+}
+
+.menu-nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.menu-nav li a{
+    display: block;
+    padding: 14px 18px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.menu-nav li a:hover{
+    background: rgba(255, 217, 102, 0.4);
+    color:#222;
+}
+.menu-nav li a.active{
+    background: rgba(255, 217, 102, 0.25);
+    color: #FF9A0A;
+}
+.menu-close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 32px;
+    line-height: 1;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: background 0.2s;
+
+}
+menu-close:hover{
+    background: rgba(0, 0, 0, 0.08);
+}
+
+/* Основной контент */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 650px;
+    margin-top: 40px;
+    gap: 15px;
+}
+
+/* Выпадающий список городов */
+.select-wrapper {
+    position: relative;
+}
+
+select {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    color: #FFD966;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    appearance: none; /* Убираем стандартный стрелочник браузера */
+    padding-right: 25px;
+}
+
+
+
+select option {
+    background: #5C6B7A;
+    color: #FFF;
+}
+
+
+.weather-img {
+    width: 350px;           
+    max-width: 100%;       
+    height: auto;          
+    display: block;        
+    margin: 10px auto;     
+    object-fit: contain;
+}
+
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grade {
+    font-weight: 800;
+    font-size: 64px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    line-height: 1;
+}
+
+.temp {
+    font-weight: 800;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    margin-top: 5px;
+}
+
+.icon_img{
+    max-width: 100px;
+    max-height: 100px;
+
+
+}
+
+
+.quote-card {
+    color: white;
+    max-width: 90%;
+    max-width: 1000px;
+    padding: 20px;
+    margin-top: 25px;
+    background: rgba(103, 156, 174, 0.35);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+
+.dav{
+    font-weight: 800;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    margin-top: 5px;
+}
+
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        height: 50px;
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .main-container {
+        margin-top: 20px;
+        gap: 12px;
+    }
+
+    select {
+        font-size: 20px;
+    }
+    .select-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .weather-img {
+        width: 250px;
+    }
+
+    .grade {
+        font-size: 52px;
+    }
+
+    .temp {
+        font-size: 20px;
+    }
+
+    .quote-card {
+        max-width: 1000px;
+        padding: 16px 12px;
+        
+    }
+
+    .dav {
+        font-size: 18px;
+    }
+
+    .icon_img {
+        max-width: 36px;
+        max-height: 36px;
+    }
+
+    table.today th.time {
+        font-size: 12px;
+        padding: 2px 0;
+        font-weight: 600;
+    }
+
+    table.today td.gr {
+        font-size: 16px;
+        padding: 2px 0;
+    }
+}
+
+

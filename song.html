@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода.Юг</title>
+    <!-- Подключаем шрифт Poppins из Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="song.css">
+    <link rel="stylesheet" href="themes.css">
+</head>
+<body>
+    <header>
+        <h1>Погода.Юг</h1>
+        <button class="menu-btn" aria-label="Меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+    </header>
+    <nav class="menu-nav" id="menu-nav">
+            <button class="menu-close" id="menu-close" aria-label="Закрыть меню">×</button>
+            <ul>
+                <li><a href="index.html">Главное меню</a></li>
+                <li><a href="today.html">Погода сегодня</a></li>
+                <li><a href="week.html">Погода на неделю</a></li>
+                <li><a href="song.html">Плейлист дня</a></li>
+            </ul>
+        </nav>
+    <div class="menu-overlay" id="menu-overlay"></div>
+    <main class="main-container">
+    <h2 class="today">Сегодня</h2>
+    <div class="quote-card">
+        <div id="playlist-container">
+            <iframe frameborder="0" allow="clipboard-write" 
+                style="border:none;width:100%;max-width:1000px;height:400px;" 
+                src="https://music.yandex.ru/iframe/#playlist/NaatySoloveva/1008">
+                Слушайте <a href="https://music.yandex.ru/playlists/5d4e53e0-5e1c-2f6b-baa7-2a101d3cee07?utm_source=web&utm_medium=copy_link">Сайт, весна</a> — <a href="https://music.yandex.ru/users/NaatySoloveva">NaatySoloveva</a> на Яндекс Музыке
+            </iframe>
+        </div>
+    </div>
+</main>
+    <script src="script.js"></script>
+</body>
+
+</html>

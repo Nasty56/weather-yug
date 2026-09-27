@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода.Юг</title>
+    <!-- Подключаем шрифт Poppins из Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="themes.css">
+</head>
+<body>
+
+    <header>
+        <h1>Погода.Юг</h1>
+        <button class="menu-btn" aria-label="Меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+    </header>
+    <nav class="menu-nav" id="menu-nav">
+            <button class="menu-close" id="menu-close" aria-label="Закрыть меню">×</button>
+            <ul>
+                <li><a href="index.html">Главное меню</a></li>
+                <li><a href="today.html">Погода сегодня</a></li>
+                <li><a href="week.html">Погода на неделю</a></li>
+                <li><a href="song.html">Плейлист дня</a></li>
+            </ul>
+        </nav>
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <main class="main-container">
+        <div class="select-wrapper">
+            <select id="city-select">
+                <option value="Prim">Приморско-Ахтарск  v</option>
+                <option value="Kras">Краснодар  v</option>
+                <option value="Eysk">Ейск  v</option>
+                <option value="Sochi">Сочи  v</option>
+                <option value="Gel">Геленджик  v</option>
+                <option value="Slav">Славянск-на-Кубани  v</option>
+                <option value="Tim">Тимашевск  v</option>
+                <option value="Can">Каневская  v</option>
+                <option value="GorK">Горячий Ключ  v</option>
+            </select>
+        </div>
+
+        
+        <img id="weather-icon" src="гроза.png" alt="Гроза" class="weather-img">
+
+        
+        <div class="weather-info">
+            <span id="temperature" class="grade">+16</span>
+            <span id="weather-desc" class="temp">Гроза</span>
+            <p class="dav">Атмосферное давление: <span id="dav">56</span></p>
+        </div>
+
+        
+        <div class="quote-card">
+            <p>Хорошая погода начинается с хорошего настроения.</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+</html>

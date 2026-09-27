@@ -1,0 +1,148 @@
+body.sunny {
+    background: radial-gradient(50% 50% at 50% 50%, #FFE9C7 58.4%, #CDE7F0 86%);
+
+}
+body.sunny header {
+    background: #FFFFFF;
+}
+body.sunny h1 {
+    color: #FF9A0A;
+}
+body.sunny .menu-btn span {
+    background-color: #FF9A0A;
+}
+
+body.sunny select {
+    color: #FFB347;
+}
+
+
+
+
+
+
+
+
+
+
+
+body.cloud {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(237, 235, 227, 0.929412) 58.4%, #DCE3E8 86%);
+
+}
+body.cloud header {
+    background: #FFFFFF;
+}
+body.cloud h1 {
+    color: #8C97A3;
+}
+body.cloud .menu-btn span {
+    background-color: #A1ADBA;
+}
+
+body.cloud select {
+    color: #A1ADBA;
+}
+
+
+
+
+
+
+
+
+body.snow {
+    background: radial-gradient(50% 50% at 50% 50%, #F5F0EC 58.4%, #E8F2F7 86%);
+
+}
+body.snow header {
+    background: #FFFFFF;
+}
+body.snow h1 {
+    color: #7FA8C4;
+}
+body.snow .menu-btn span {
+    background-color: #7FA8C4;
+}
+
+body.snow select {
+    color: #9EC1D9;
+}
+
+
+
+
+
+
+
+
+
+
+body.windy {
+    background: radial-gradient(50% 50% at 50% 50%, #BDD1DE 58.4%, #A0B8C9 86%);
+
+}
+body.windy header {
+    background: #FFFFFF;
+}
+body.windy h1 {
+    color: #5B87A8;
+}
+body.windy .menu-btn span {
+    background-color: #5B87A8;
+}
+
+body.windy select {
+    color: #6C99BA;
+}
+
+
+
+
+
+
+
+
+
+body.rain {
+    background: radial-gradient(50% 50% at 50% 50%, #BDD1DE 58.4%, #A0B8C9 86%);
+
+}
+body.rain header {
+    background: #FFFFFF;
+}
+body.rain h1 {
+    color: #5B87A8;
+}
+body.rain .menu-btn span {
+    background-color: #5B87A8;
+}
+
+body.rain select {
+    color: #6C99BA;
+}
+
+
+
+
+
+body.thunderstorm {
+    background: radial-gradient(50% 50% at 50% 50%, #B8C0C7 26.64%, #5C6B7A 68.71%);
+
+}
+body.thunderstorm header {
+    background: rgba(255, 255, 255, 0.25);
+}
+body.thunderstorm h1 {
+    color: #FFD966;
+}
+body.thunderstorm .menu-btn span {
+    background-color: #FFD966;
+}
+
+body.thunderstorm select {
+    color: #FFD966;
+}
+
+
+
